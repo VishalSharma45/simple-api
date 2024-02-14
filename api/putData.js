@@ -11,7 +11,7 @@ app.put('/:name', async (req, res) => {
         { name: req.params.name },
         { $set: req.body })
     console.log(result)
-    // res.send();
+    res.send("updated");
 })
 
 app.listen(5500);
